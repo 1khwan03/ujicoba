@@ -1,8 +1,13 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const HomeCom = () => {
   return (
     <div className="p-4 bg-[#f3e2cf] flex flex-col">
+      <div>
+        <Navbar />
+      </div>
       <main className="container mx-auto px-4 py-8">
         <section className="bg-[#f3e2cf] py-16">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
@@ -56,7 +61,7 @@ const HomeCom = () => {
               alt="Bakery"
               className="rounded-lg"
             />
-            <div>
+            <div classname=" grid-cols-2 items-center grid">
               <h2 className="text-3xl font-bold mb-4">Bakeryou</h2>
               <p className="mb-4">
                 Enjoy freshly baked bread, hot rolls, wholesome pastries, and
@@ -118,6 +123,9 @@ const HomeCom = () => {
           </div>
         </section>
       </main>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
